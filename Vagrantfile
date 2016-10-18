@@ -6,6 +6,9 @@ Vagrant.configure(2) do |config|
   # boxes at https://atlas.hashicorp.com/search.
   config.vm.box = "puppetlabs/centos-6.6-64-puppet"
 
+  # Set Box Version for puppet
+  config.vm.box_version = "1.0.1"
+
   # Create a forwarded port mapping which allows access to a specific port
   # within the machine from a port on the host machine. In the example below,
   # accessing "localhost:8080" will access port 80 on the guest machine.
