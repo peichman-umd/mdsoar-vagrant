@@ -53,3 +53,13 @@ firewall { '100 allow http and https access':
     proto  => tcp,
     action => accept,
 }
+
+# Install Git
+include git
+
+# Ensure that the correct branch of solr-env is checked out
+vcsrepo { '/apps/solr-env-sync':
+  ensure   => present,
+  provider => git,
+  revision => 'local',
+}
