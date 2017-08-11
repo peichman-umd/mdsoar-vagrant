@@ -70,4 +70,4 @@ chown -R vagrant:vagrant /apps/apache-tomcat-${TOMCAT_VERSION}
 
 # Puppet Modules
 puppet module install puppetlabs-firewall
-puppet module install puppetlabs-postgresql
+puppet module install puppetlabs-postgresql --version 4.9.0

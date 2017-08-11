@@ -8,6 +8,7 @@ class { 'postgresql::server': }
 # https://wiki.duraspace.org/display/DSDOC5x/Installing+DSpace
 postgresql::server::db { 'dspace':
     user     => 'dspace',
+    owner     => 'dspace',
     password => postgresql_password('dspace', 'dspace'),
     encoding => 'UNICODE',
 }
